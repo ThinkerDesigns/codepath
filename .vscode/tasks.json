@@ -4,7 +4,8 @@
     {
       "label": "Commit and Push",
       "type": "shell",
-      "command": "git add . && git commit -m \"$(date '+%Y-%m-%d update')\" && git push"
+      "command": "git add . && git commit -m \"$(date '+%Y-%m-%d update')\" && git push",
+      "problemMatcher": []
     }
   ]
 }
