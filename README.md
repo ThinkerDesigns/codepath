@@ -2,4 +2,4 @@
 
 The repository contains non-gpted code that I have written to help me practice DSA problems in Python.
 
-![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=ThinkerDesigns&repo=codepath)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ThinkerDesigns&theme=github)](https://github.com/ThinkerDesigns/codepath)
