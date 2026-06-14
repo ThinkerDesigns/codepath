@@ -1,7 +1,6 @@
 def restock_inventory(current_inventory, restock_list):
     result = current_inventory.copy()
     for x in range(len(current_inventory)):
-        
         if list(restock_list)[x] not in result:
             result[list(restock_list)[x]] = list(restock_list.values())[x]
         else:
