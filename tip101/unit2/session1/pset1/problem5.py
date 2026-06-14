@@ -1,8 +1,11 @@
-# WIP - think im close
 def restock_inventory(current_inventory, restock_list):
-    result = {}
+    result = current_inventory.copy()
     for x in range(len(current_inventory)):
-        result[list(restock_list)] = list(restock_list.values())[x] + list(current_inventory.keys())[x]
+        
+        if list(restock_list)[x] not in result:
+            result[list(restock_list)[x]] = list(restock_list.values())[x]
+        else:
+            result[list(restock_list)[x]] = list(restock_list.values())[x] + result[list(restock_list)[x]]
     return result
 current_inventory = {
     "apples": 30,
@@ -15,4 +18,4 @@ restock_list = {
     "apples": 10,
     "pears": 5
 }
-restock_inventory(current_inventory,restock_list)
+print(restock_inventory(current_inventory,restock_list)) # I don't know how to print it in that JSON format the output has.
